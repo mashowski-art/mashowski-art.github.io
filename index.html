@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Mashowski Art Studio — analog perceptual design, string art objects, spatial interfaces and custom commissions."
+    content="Mashowski Art — analog perceptual design, string art objects, spatial interfaces and custom commissions."
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #050608;
@@ -23,14 +26,26 @@
       padding: 0;
     }
 
+    .hero {
+  background: #3b3b3b;
+  color: #ffffff;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.hero h1,
+.hero p,
+.hero small {
+  color: #ffffff;
+}
+    
     body {
-      background: radial-gradient(circle at top left, #151515 0, #050608 45%, #000000 100%);
-      color: var(--fg);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #3b3b3b;
+  line-height: 1.6;
+}
 
     .page {
       max-width: 980px;
@@ -173,10 +188,17 @@
     }
 
     a:hover {
-      color: #ffffff;
+      color: #3b3b3b;
       text-decoration-color: rgba(245, 245, 245, 0.9);
     }
-
+    
+    .section-separator,
+    hr {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 2.5rem 0;
+    }
+    
     .pill {
       display: inline-flex;
       align-items: center;
